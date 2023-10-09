@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name,age,address){
+            this.name =name;
+            this.age = age;
+            this.address=address;
+            }
+            greek() {
+                console.log(
+                    `my name is ${this.name} and my age is ${this.age} i am living in ${this.address}`
+
+                )
+
+            }
+            
+        }
+        const person1= new Person("ajith",23,"trichy");
+        const person2= new Person("ak",25,"chennai");
+        person1.greek();
+        person2.greek();
+    </script>
+</body>
+</html>

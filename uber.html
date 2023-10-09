@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  
+let baseFee = 2
+let cities = ["trichy", "chennai", "madhurai", ]
+let uberRates = [5, 10, 15]
+let customerName = "ajith"
+let customerCity = "trichy" 
+console.log(`Hello ${ customerName}` + ` welcome to the Uber Rate discount`)
+function getRate(customerCity) {
+  function uberRate(customerCity, index) { 
+    let finalRate = (uberRates[index]) * baseFee
+    return finalRate
+  }
+  
+  console.log(customerCity, "rate is:", uberRate(customerCity, cities.indexOf(customerCity)))
+}
+
+getRate(customerCity)
+  </script>
+  
+</body>
+</html>
